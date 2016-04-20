@@ -6,10 +6,8 @@ const MONGODB_PORT_NUMBER = 27017;
 var express = require("express");
 var app = express();
 var mongodb = require("mongodb").MongoClient;
-var db_url = process.env.MONGOLAB_URI || 
-  process.env.MONGOHQ_URL ||
-  'mongodb://localhost:'+ MONGODB_PORT_NUMBER +'/fcc_url_shortener';
-  
+var db_url = "mongodb://someuser:mycoolpassword81@ds013951.mlab.com:13951/fcc-challenge";
+
 var baseConvert = require("./base_converter");
 
 //define view engine
